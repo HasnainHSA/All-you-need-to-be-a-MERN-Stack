@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class 6</title>
+</head>
+<body>
+    <h1>Tables</h1>
+    
+    <!-- The <table> element is used to create a table -->
+    <table>
+    <!-- You indicate the start of each row using the opening <tr> tag.  -->
+        <tr>
+    <!-- Each cell of a table is represented using a <td>
+    element. (The td stands for table data.) -->
+            <td>10</td>
+            <td>20</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>50</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>70</td>
+            <td>80</td>
+            <td>90</td>
+        </tr>
+    </table>
+
+    
+    <table>
+        <tr>
+    <!-- The <th> element is used just like the <td> element but its 
+    purpose is to represent the heading for either a column or a row.-->
+            <th>Vegetables</th>
+            <td>Spinach</td>
+            <td>Patato</td>
+            <td>Onion</td>
+        </tr>
+        <tr>
+            <td>34</td>
+    <!-- Sometimes you may need the entries in a table to stretch 
+    across more than one column. -->
+            <td colspan="2">46</td>
+            <td>58</td>
+        </tr>
+        <tr>
+            <td>Kg</td>
+    <!-- You may also need entries in a table to stretch down
+     across more than one row -->
+            <td rowspan="2">Mm</td>
+            <td>Cm</td>
+        </tr>
+    </table>
+
+
+    <br><br><br>
+    <!-- Long Tables -->
+    <!-- for giving extra information to table-->
+    <table>
+        <!-- The headings of the table should sit inside the <thead> element.  -->
+        <thead>
+        <tr>
+        <th>Date</th>
+        <th>Income</th>
+        <th>Expenditure</th>
+        </tr>
+        </thead>
+        <!-- The body should sit inside the <tbody> element.  -->
+        <tbody>
+        <tr>
+        <th>1st January</th>
+        <td>250</td>
+        <td>36</td>
+        </tr>
+        <tr>
+        <th>2nd January</th>
+        <td>285</td>
+        <td>48</td>
+        </tr>
+        <tr>
+        <th>31st January</th>
+        <td>129</td>
+        <td>64</td>
+        </tr>
+        </tbody>
+        <!-- The footer belongs inside the <tfoot> element. -->
+        <tfoot>
+        <tr>
+        <td></td>
+        <td>7824</td>
+        <td>1241</td>
+        </tr>
+        </tfoot>
+       </table>
+       <br><br><br>
+
+    <!-- Old Code: Width & Spacing & Border & Background -->
+
+    <table border="2" bgcolor="#efefef">
+        <tr>
+        <th width="100"></th>
+        <th>Withdrawn</th>
+        <th>Credit</th>
+        <th width="150" bgcolor="white">Balance</th>
+        </tr>
+        <tr>
+        <th>January</th>
+        <td>250.00</td>
+        <td>660.50</td>
+        <td bgcolor="green">410.50</td>
+        </tr>
+        <tr>
+        <th>February</th>
+        <td>135.55</td>
+        <td>895.20</td>
+        <td bgcolor="yellow">1170.15</td>
+        </tr>
+       </table>
+
+</body>
+</html>
