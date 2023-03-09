@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class 7</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+
+    <!-- Form controls live inside a 
+    <form> element. This element should always carry the action 
+    attribute and will usually have a method and id attribute too. -->
+    <form action="http://www.example.com" method="get">
+      <!-- Its value is the URL for the page on the server that will 
+    receive the information in the form when it is submitted. -->
+
+      <!-- The <input> element is used to create several different form controls. -->
+
+      <!-- When users enter information into a form, the server needs to 
+    know which form control each piece of data was entered into -->
+
+      <!-- You can use the maxlength attribute to limit the number 
+    of characters a user may enter into the text field. -->
+
+      <!-- It was used in older forms to indicate the width of the text input  -->
+      <input
+        type="text"
+        name="username"
+        maxlength="7"
+        size=""
+        placeholder="enter your user name"
+      />
+      <br />
+
+      <!--  they cannot see sensitive data such as passwords -->
+      <input
+        type="password"
+        name="password"
+        placeholder="enter your password"
+      />
+      <br />
+
+      <!-- The <textarea> element is used to create a mutli-line text input.  -->
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <br />
+
+      <!-- Radio buttons allow users to pick just one of a number of options. -->
+
+      <!-- The value attribute indicates the value that is sent to the server
+     for the selected option.  -->
+
+      <!-- The value of this attribute is checked.  -->
+      <input type="radio" name="male" value="male" />
+      <input type="radio" name="female" value="female" />
+      <br />
+
+      <!-- Checkboxes allow users to select (and unselect) one or more options 
+      in answer to a question. -->
+      <p>One</p>
+      <input type="checkbox" name="one" value="one" />
+      <p>Two</p>
+      <input type="checkbox" name="two" value="two" />
+      <p>three</p>
+      <input type="checkbox" name="three" value="three" />
+      <br />
+
+      <!-- ======  Drop Down List Box ====== -->
+      <!-- The <select> element is used to create a drop down list box. -->
+      <select name="numbers">
+        <!-- The <option> element is used to specify the options that the 
+      user can select from -->
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+      </select>
+      <br /><br />
+
+      <!-- You can allow users to select multiple options from this list -->
+
+      <!-- through size You can turn a drop down select 
+      box into a box that shows more than one option -->
+      <select name="" multiple="multiple" size="2">
+        <option value="four">Four</option>
+        <option value="five">Five</option>
+        <option value="six">Six</option>
+      </select>
+      <br /><br />
+
+      <!-- If you want to allow users to upload a file (for example an 
+      image, video, mp3, or a PDF), -->
+      <input type="file" />
+      <br />
+
+      <!-- The submit button is used to send a form to the server. -->
+      <input type="submit" />
+      <br />
+
+      <!-- f you want to use an image for 
+      the submit button, you can give the type attribute a value of 
+      image. The src, width, height, and alt attributes work just 
+      like they do when used with the <img> element -->
+      <input
+        type="image"
+        src="https://th.bing.com/th/id/R.8483517770d2152bf96ca40bc425d26a?rik=THfo8w5TvQr8wQ&riu=http%3a%2f%2fb.rgbimg.com%2fusers%2fb%2fba%2fba1969%2f600%2fn4yMVtg.jpg&ehk=0eLGs9J3YS1mIEMwOWxLVPionPkF98G9X7Kklj9tEDo%3d&risl=&pid=ImgRaw&r=0"
+        alt="button"
+        width="50"
+      />
+      <br />
+
+      <!-- The <button> element was introduced to allow users more control -->
+      <button>
+        <img
+          src="https://th.bing.com/th/id/R.738c412af61dc12d6c1f77c01d7b4ffb?rik=QJ2OC04jwCElsQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fpaomedia%2fsmall-n-flat%2f1024%2fsign-add-icon.png&ehk=Nvs%2bq0fI7%2bINjO0YZVIyv5jtPJCfahnbTfVX4gjoXFE%3d&risl=&pid=ImgRaw&r=0"
+          alt="button"
+          width="20"
+        />submit
+      </button>
+      <br /><br />
+
+      <!-- <label> element as this 
+      makes the form accessible to vision-impaired users -->
+      <label for="age"
+        >Age
+        <input type="number" />
+      </label>
+      <br /><br />
+
+      <!-- You can group related form 
+      controls together inside the <fieldset> element. -->
+      <fieldset>
+        <!-- <fieldset> tag and contains a 
+        caption which helps identify the purpose -->
+        <legend>Contact details</legend>
+        <label
+          >Email:<br />
+          <input type="text" name="email" /></label
+        ><br />
+        <label
+          >Mobile:<br />
+          <input type="text" name="mobile" /></label
+        ><br />
+        <label
+          >Telephone:<br />
+          <input type="text" name="telephone"
+        /></label>
+      </fieldset>
+      <br />
+
+      <!-- HTML5: Form Validation -->
+
+      <input type="text" placeholder="enter your username" /><br />
+      <input type="email" required="required" placeholder="enetr your email" />
+      <br /><br />
+
+      <!-- examples of other input "types" -->
+      <input type="date" />
+      <br />
+      <input type="time" />
+      <br />
+      <input type="search" />
+      <br />
+      <input type="range" />
+      <br />
+      <input type="url" placeholder="enter yput url" />
+      <br />
+    </form>
+  </body>
+</html>
